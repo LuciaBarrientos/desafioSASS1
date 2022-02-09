@@ -1,0 +1,34 @@
+//cards home//
+
+.cardsHome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:30px;
+    
+    .cardSecciones {
+        background-color: nth($colores,5);
+        margin: 30px;
+        text-align: center;
+        border-radius: 5px;
+        border: 1px solid nth($colores,4);
+        
+        &:hover {
+            background-color: nth($colores,4);
+            transform: scale(1.07);
+            transition: 0.5s;
+        }
+        
+        img {
+            width: 100%;
+        }
+
+        p {
+            font-size: 16px;
+            padding: 0px 0px 10px 0px;
+            font-weight: bold;
+            color: nth($colores,2);
+        }
+
+    }
+}

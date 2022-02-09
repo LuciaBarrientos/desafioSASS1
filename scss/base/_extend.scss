@@ -1,0 +1,54 @@
+@import "listas.scss";
+
+// frases diseño //
+
+%frases {
+    font-size: 30px;
+    font-style: bold;
+    text-align: center;
+    color: nth($colores,1);
+    margin: 50px 0px 50px 0px;
+}
+
+
+//preview secciones//
+
+%secciones {
+    background-color: nth($colores,5);
+    padding: 50px;
+    display: grid;
+    grid-template-columns: 20% 50%;
+    justify-content: center;
+
+    h2 {
+        color: nth($colores,1);
+        font-size: 35px;
+    }
+
+    p {
+        margin-bottom: 30px;
+    }
+}
+
+
+%botonSecciones {
+    border: 1px solid nth($colores,1);
+    border-radius: 40px;
+    padding: 10px;
+    font-style: italic;
+    font-weight: bold;
+    display: inline-block;
+
+    a {
+        color: nth($colores,1);
+    }
+    
+
+    &:hover {
+        background-color: nth($colores,1);
+
+        a {
+            color: nth($colores,6); 
+        }
+    }
+}
