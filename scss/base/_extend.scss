@@ -8,6 +8,16 @@
     text-align: center;
     color: nth($colores,1);
     margin: 50px 0px 50px 0px;
+
+    @media only screen and (max-width: 1200px) and (min-width: 600px){
+        font-size: 25px;
+        margin: 5%;
+    }
+
+    @media screen and (max-width: 599px){
+        font-size: 30px;
+        margin: 5%;
+    }
 }
 
 
@@ -27,6 +37,22 @@
 
     p {
         margin-bottom: 30px;
+    }
+
+      @media screen and (max-width: 1200px){
+        grid-template-columns: auto;
+        text-align: center;
+        font-size: 15px;
+        padding: 5%;
+
+        h2 {
+            margin-bottom: 5%;
+            font-size: 35px;
+        }
+
+        p {
+            font-size: 20px;
+        }
     }
 }
 
@@ -51,4 +77,9 @@
             color: nth($colores,6); 
         }
     }
+
+    @media screen and (max-width: 1200px){
+        font-size: 20px;
+    }
+
 }

@@ -73,4 +73,35 @@ footer {
             transform: scale(1.2)
         }
     }
+
+    @media screen and (max-width: 1200px){
+
+        .logoFooter {
+            display: flex;
+            justify-content: center;
+        }
+
+        img {
+            width: 40%;
+        }
+
+        .redesFooter {
+            display: flex;
+            justify-content: center;
+        }
+
+        .iconIG {
+            width: 20%;
+        }
+
+        .iconFB {
+            width: 18%;
+        }
+
+        .contenidoFooter {
+            display: grid;
+            grid-template-columns: 100%;
+        }
+    }
+
 }

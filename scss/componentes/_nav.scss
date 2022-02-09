@@ -38,4 +38,48 @@ nav {
             color: #00bebb;
         }
 
+        @media only screen and (max-width: 1200px) and (min-width: 600px){
+            display: grid;
+            grid-template-columns: 20% 80%;
+            justify-content: space-around;
+            align-items: center;
+
+            .logoHeader {
+                width: 90%; 
+            }
+
+            ul {
+                margin: 5px;
+                text-align: center;
+                padding: 5px;
+                justify-content: space-evenly;
+            }
+        }
+
+
+        @media screen and (max-width: 599px){
+            align-items: center;
+            background-color: nth($colores,6);
+            width: 100%;
+
+            .logoHeader {
+                display: none;
+            }
+
+            ul {
+                font-size: small;
+                align-items: center;
+                width: 100%;
+                padding: 0%;
+                text-align: center;
+                justify-content: space-evenly;
+                margin: 2%;
+
+                li {
+                    padding: 0%;
+                    margin: 10%;
+                }
+            }
+        }
+
 }
